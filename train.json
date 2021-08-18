@@ -1,0 +1,32 @@
+{
+    "root_train": "E:\\data_aug\\TT100K\\train2017",
+    "root_eval": "E:\\data_aug\\TT100K\\val2017",
+    "list_train": "data/voc_trainval.txt",
+    "list_eval": "data/new_tt100k_test.txt",
+    "name_file": "data/voc_name.txt",
+
+    "load": true,
+    "save": true,
+    "pretrain": false,
+    "freeze_bn": true,
+    "epoch_num": [4, 6, 2],
+
+    "nbatch_train": 2,
+    "nbatch_eval": 2,
+    "device": [1],
+    "num_workers": 0,
+    
+    "lr": 0.01,
+    "lr_decay": 0.1,
+    "momentum": 0.9,
+    "weight_decay": 0.0001,
+
+    "boxarea_th": 16,
+    "grad_clip": 5,
+    
+    "augmentation": false,
+    "img_scale_min": 0.6,
+    "crop_scale_min": 0.4,
+    "aspect_ratio": [0.750, 1.333],
+    "remain_min": 0.8
+}
